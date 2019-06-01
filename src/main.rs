@@ -41,7 +41,7 @@ fn main() {
 
 	// Soubory
 	let slovnik = File::open(slovnik_name)
-		.unwrap_or_else(|_| error("nepodařilo se vytvořit soubor se slovníkem"));;
+		.unwrap_or_else(|_| error("nepodařilo se vytvořit soubor se slovníkem"));
 
 	let text = File::open(text_name)
 		.unwrap_or_else(|_| error("nepodařilo se otevřít soubor s levopisem"));
